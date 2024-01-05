@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/search.css" />
+    <link rel="stylesheet" href="/css/project.css" />
+    <link rel="stylesheet" href="/css/news.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/production.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="hamburger-menu">
+          <span>☰</span>
+        </div>
+    
+        <div class="logo">
+          <img src="/assets/logom.jpg" />
+        </div>
+    
+        <nav class="navigation-menu">
+          <ul>
+            <li><a href="#">ANA SAYFA</a></li>
+            <li><a href="#">HAKKIMIZDA</a></li>
+            <li><a href="#">ÜRÜNLER</a></li>
+            <li><a href="#">PROJELER</a></li>
+            <li><a href="#">HABERLER</a></li>
+            <li><a href="#">İLETİŞİM</a></li>
+          </ul>
+        </nav>
+    
+        <div class="language-select">
+          <a href="#" title="Türkçe"><img src="/assets/türk.jpg" alt="Türkiye Bayrağı"/></a>
+          <a href="#" title="English"><img src="/assets/ingiliz.png" alt="İngiltere Bayrağı"/></a>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div class="slider-container">
+      <div class="slider">
+        <img src="/assets/resim1.jpg" alt="Resim 1" />
+        <img src="/assets/resim2.jpg" alt="Resim 2" />
+        <img src="/assets/resim3.jpg" alt="Resim 3" />
+      </div>
+    </div>
+    <div class="about-section" id="hakkimizda">
+        <div class="about-vertical-text">
+          HAKKIMIZDA
+        </div>
+        <div class="about-content">
+            <h2>Yenilendik, artık daha güçlüyüz...</h2>
+          <h1>Hakkımızda_</h1>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed nisi nulla, fringilla in aliquam nec, tempor nec justo. Fusce non pretium lacus.
+          </p>
+          <p class="about-details">
+            Curabitur luctus, metus non commodo aliquam, felis nisi ornare tellus, et facilisis mauris dolor eget libero. Morbi ut blandit est, at hendrerit justo.
+          </p>
+          <p class="about-details">
+            Aliquam erat volutpat. Quisque ut tellus ligula. In vel finibus nulla, quis posuere felis. Mauris iaculis iaculis nisl vel porttitor.
+          </p>
+        </div>
+        <div class="about-banner">
+          <img src="/assets/about.png" alt="Hakkımızda">
+        </div>
+      </div>
+      
+      
+    <div class="search-section">
+      <p class="search-text">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+        temp incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+        quis nostrud ullamco lab oris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="search-container">
+        <i class="fa fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Arama yap..." />
+        <button class="search-button">ARA</button>
+      </div>
+    </div>
+  
+  <div class="container">
+    <div class="production-vertical-text ">
+      ÜRETİM
+  </div>
+    <div class="vertical-menu">
+      <span class="menu-item" onclick="changeContent('uretim-content')">Üretim</span>
+      <span class="menu-item" onclick="changeContent('sektorler-content')">Sektörler</span>
+      <span class="menu-item active" onclick="changeContent('tasarimlar-content')">Tasarımlar</span>
+      <span class="menu-item" onclick="changeContent('urunler-content')">Ürünler</span>
+    </div>
+    
+    <div id="uretim-content" class="content-section">
+      <!-- Üretim içeriği -->
+    </div>
+    <div id="sektorler-content" class="content-section" style="display: none;">
+      <!-- Sektörler içeriği -->
+    </div>
+    <div id="tasarimlar-content" class="content-section" style="display: none;">
+      <!-- Tasarımlar içeriği -->
+    </div>
+    <div id="urunler-content" class="content-section" style="display: none;">
+      <!-- Ürünler içeriği -->
+    </div>
+    
+    
+    <div class="main-image">
+        <img src="/assets/claris.png" alt="Ana Görsel" id="mainImage">
+        <!-- Thumbnails -->
+        <div class="thumbnail-container">
+          <img src="/assets/claris.png" onclick="changeMainImage('/assets/claris.png')">
+          <img src="/assets/rocket4u.png" onclick="changeMainImage('/assets/rocket4u.png')">
+          <img src="/assets/ymm.png" onclick="changeMainImage('/assets/ymm.png')">
+          <img src="/assets/capsule.jpg" onclick="changeMainImage('/assets/capsule.jpg')">
+          <img src="/assets/manager.jpg" onclick="changeMainImage('/assets/manager.jpg')">
+        </div>
+        
+    </div>
+    <div class="content">
+      <h1 class="title">
+        <span class="title-main">Proje ve</span>
+      </h1>
+      <h1 class="title"> <span class="title-highlight">Tasarımlar_</span> </h1>
+      <div class="text">
+        <p>Mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <a href="#" class="continue-link">→ DEVAMI </a>
+      </div>
+    </div>
+  </div>
+<!-- İki Renkli Bölüm -->
+<div class="two-colored-section">
+  <div class="left-side">
+    <h1 class="vertical-text">PROJELER</h1>
+    <h2 class="main-heading">
+        <strong>YENİ MOBİL UYGULAMALARIMIZI</strong><br>
+        <span class="light-text">BURADAN İNDİREBİLİRSİNİZ!</span>
+    </h2>
+    <p class="description-text">
+        Mollitia animi est laborum sed ut perspiciatis unde omnis iste
+        voluptate nesciunt...
+    </p>
+</div>
+<div class="right-side">
+  <div class="new-items">NEW ITEMS / OCAK 2018</div> 
+  <p class="description-text">
+    Labore et dolore magna aliqua enim veniam quis nostrud ullamco
+    laboris...
+</p>
+<h2 class="main-heading">
+  <strong>2018 PROJELERİMİZİ</strong>
+  <br><span class="light-text">İNCELEDİNİZ Mİ?</span>
+</h2>
+    
+</div>
+</div>
+
+   <!-- Özellikler Bölümü -->
+<div class="features-section">
+  <div class="feature-item">
+    <div class="feature-icon-container">
+      <img src="/assets/group-chat.png" alt="Ekibimiz" class="feature-icon" />
+    </div>
+    <div class="feature-content">
+      <h2 class="feature-title">EKİBİMİZ</h2>
+      <p class="feature-description">
+        Labore et dolore magna aliqua ut enim ad minim veniam quis nostrud
+        ullamco laboris nisi ut aliquip.
+      </p>
+    </div>
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon-container">
+      <img src="/assets/offline.png" alt="Teknoloji" class="feature-icon" />
+    </div>
+    <div class="feature-content">
+      <h2 class="feature-title">TEKNOLOJİ</h2>
+      <p class="feature-description">
+        Labore et dolore magna aliqua ut enim ad minim veniam quis nostrud
+        ullamco laboris nisi ut aliquip.
+      </p>
+    </div>
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon-container">
+      <img src="/assets/gears.png" alt="Ar-Ge" class="feature-icon" />
+    </div>
+    <div class="feature-content">
+      <h2 class="feature-title">AR-GE</h2>
+      <p class="feature-description">
+        Labore et dolore magna aliqua ut enim ad minim veniam quis nostrud
+        ullamco laboris nisi ut aliquip.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Haberler Bölümü -->
+<div class="news-section">
+    <h2 class="news-vertical-text">HABERLER</h2>
+    <div class="main-news">
+      <img class="main-news-image" src="/assets/haber.jpg" alt="Ana Haber Resmi">
+      <div class="main-news-content">
+        <span class="main-news-date">10 OCAK 2018</span> <!-- Tarih ekledim -->
+        <h3 class="main-news-title">Lorem ipsum dolor sit amet consectetur adipis elit sed eiusmod tempor</h3>
+        <p class="main-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incidunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+        <a class="main-news-link" href="#">
+            <span class="arrow">→</span> DEVAMI
+          </a>
+      </div>
+    </div>
+    <div class="other-news">
+        <div class="news-item">
+            <img class="news-image" src="/assets/haber.jpg" alt="Haber Resmi" style="display:none;">
+            <div class="news-meta">
+            <div class="news-date">15 OCAK 2018</div>
+            <div class="news-author">ADMIN</div>
+          </div>
+          <div class="news-summary">Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incidunt ut labore dolore magna aliqua ut enim ad minim veniam.</div>
+        </div>
+        <div class="news-item" onclick="updateMainNews('/assets/haber2.jpg', 'Haber Başlığı 2', 'Haber özeti 2')">
+          <img class="news-image" src="/assets/haber2.jpg" alt="Haber Resmi">
+          <div class="news-meta">
+            <div class="news-date">20 OCAK 2018</div>
+            <div class="news-author">ADMIN 2</div>
+          </div>
+          <div class="news-summary">Lorem ipsum dolor sit amet consectetur adipiscing elit...</div>
+        </div>
+        <div class="news-item" onclick="updateMainNews('/assets/haber4.jpg', 'Haber Başlığı 3', 'Haber özeti 3')">
+          <!-- Üçüncü haber öğesi içeriği -->
+        </div>
+      
+    </div>
+  </div>
+<!-- İletişim Bölümü -->
+<div class="contact-section">
+    <div class="contact-container contact-left">
+        <div class="vertical-title">İLETİŞİM</div> <!-- Dikey başlık -->
+      <form class="contact-form">
+        <h1 class="contact-title">Mesaj Gönder</h1>
+
+        <input type="text" id="name" name="name" placeholder="Adınız Soyadınız">
+        <input type="email" id="email" name="email" placeholder="Email Adres">
+        <input type="text" id="subject" name="subject" placeholder="Konu">
+        <textarea id="message" name="message" placeholder="Mesajınız"></textarea>
+        <button type="submit" class="contact-submit">GÖNDER</button>
+      </form>
+    </div>
+    <div class="contact-container contact-right">
+      <!-- Sağ taraf içeriği -->
+      <div class="contact-info">
+        <h2 class="contact-info-title">YÖNETİM ADRES</h2>
+        <p class="contact-info-text">Mahalleşi Mah Cadde Cad.<br>Masalak / İstanbul / TÜRKİYE</p>
+        <h2 class="contact-info-title">TELEFON</h2>
+        <p class="contact-info-text">+90 (216) 215 50 55</p>
+        <h2 class="contact-info-title">FABRİKA ADRES</h2>
+        <p class="contact-info-text">6. Organize Sanayi Bölgesi 2. Cadde No: 20<br>Ümraniye / İstanbul / TÜRKİYE</p>
+        <h2 class="contact-info-title">TELEFON</h2>
+        <p class="contact-info-text">+90 (245) 11 24</p>
+        <h2 class="contact-info-title">EMAIL - WEB</h2>
+        <p class="contact-info-text">info@domain.com - www.domain.com</p>
+        <h2 class="contact-info-title">SOSYAL MEDYA</h2>
+        <p class="contact-info-text">FACEBOOK<br>TWITTER<br>LINKEDIN</p>
+      </div>
+    </div>
+</div>
+
+
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

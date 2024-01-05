@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 500px;
+  }
+  
+  .vertical-menu {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: large;
+  }
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item.active {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 500px;
+    margin-bottom: 40px;
+  }
+  
+  .thumbnail-container img {
+    width: 90px; 
+    height: 75px; 
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+  
+  .thumbnail-container img:last-child {
+    margin-right: 0; 
+  }
+  
+  .main-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 40px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  .title-main {
+    color: #000;
+    font-size: 1em; 
+    font-weight: 200;
+  }
+  
+  .title-highlight {
+    color: #0066cc;
+    font-size: 1.2em; 
+  }
+  
+  .text p {
+    color: #333;
+    margin: 0 0 10px 0;
+    margin-top: 20px;
+  }
+  
+  .continue-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .main-image img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  .production-vertical-text {
+    font-size: 2.4em; 
+    position: absolute; 
+    left: 20px; 
+    transform-origin: left bottom; 
+    writing-mode: tb-rl; 
+    transform: rotate(180deg); 
+    margin-left: 80px;
+    margin-top: -150px;
+    font-weight:100;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    height: auto;
+  }
+
+  .vertical-menu {
+    display: none; 
+  }
+
+  .production-vertical-text {
+    position: relative;
+    transform: rotate(0deg);
+    writing-mode: horizontal-tb;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center; 
+    margin-right: 100px;
+  }
+
+  .thumbnail-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .thumbnail-container img {
+    width: 70px; 
+    height: 67px;
+  }
+
+  .main-image img {
+    max-width: 90%;
+  }
+
+  .content {
+    padding: 10px;
+    margin-left: 0;
+    text-align: center; 
+  }
+
+  .title, .title-main, .title-highlight {
+    font-size: 1.5em; 
+    text-align: center; 
+  }
+
+  .text p {
+    margin-top: 15px;
+  }
+
+  .continue-link {
+    font-size: 1em; 
+  }
+}
